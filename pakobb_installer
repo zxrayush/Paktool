@@ -1,0 +1,13 @@
+#!../usr/bin/bash
+merpro=$EXTERNAL_STORAGE/Download/pakobb_1st
+locbin=$PREFIX/bin
+
+if [[ -f "$merpro" ]]
+then
+cp -rf $merpro $locbin
+chmod +x $locbin/pakobb_1st
+pakobb_1st
+else
+echo "No pakobb_1st file in Download directory"
+echo "File pakobb_1st TIDAK ada di folder Download"
+fi
